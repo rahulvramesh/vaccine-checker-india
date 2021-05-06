@@ -12,8 +12,8 @@ const Twitter = require("twitter");
 const moment = require("moment");
 const cron = require("node-cron");
 
-const accountSid = "AC5030e4740a7973af1cc22d1d7158bb40";
-const authToken = "87ba9b418347260760523bf504f716ed";
+const accountSid = process.env.TWILIO_MESSAGE_ACCOUNT_SID;
+const authToken = process.env.TWILIO_MESSAGE_ACCOUNT_AUTH_TOKEN;
 const twilioClient = require("twilio")(accountSid, authToken);
 
 const getCenters = async (districtId) => {
