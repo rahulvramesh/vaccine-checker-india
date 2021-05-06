@@ -16,6 +16,7 @@
     "twitter": "^1.7.1"
   },
   "devDependencies": {
+    "dotenv": "^9.0.0",
     "node-cron": "^3.0.0",
     "twilio": "^3.62.0"
   }

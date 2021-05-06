@@ -5,11 +5,13 @@
 
 // axios call the api
 
+require('dotenv').config()
 const axios = require("axios");
 const _ = require("lodash");
 const Twitter = require("twitter");
 const moment = require("moment");
 const cron = require("node-cron");
+
 
 const accountSid = "AC5030e4740a7973af1cc22d1d7158bb40";
 const authToken = "87ba9b418347260760523bf504f716ed";
